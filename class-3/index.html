@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+// Given input
+let searchQuery = " Learn JavaScript Functions Arrow IIFE ";
+
+// 1. Trim the input string
+let cleanedQuery = searchQuery.trim();
+console.log("Cleaned Query:", cleanedQuery);
+console.log("Length:", cleanedQuery.length);
+
+// 2. Convert to lowercase and uppercase
+let lowerCaseQuery = cleanedQuery.toLowerCase();
+let upperCaseQuery = cleanedQuery.toUpperCase();
+console.log("Lowercase:", lowerCaseQuery);
+console.log("Uppercase:", upperCaseQuery);
+
+// 3. Extract the word 'JavaScript' using substring() and slice()
+let jsStartIndex = cleanedQuery.indexOf("JavaScript");
+let jsEndIndex = jsStartIndex + "JavaScript".length;
+
+let extractedBySubstring = cleanedQuery.substring(jsStartIndex, jsEndIndex);
+let extractedBySlice = cleanedQuery.slice(jsStartIndex, jsEndIndex);
+
+console.log("Extracted (substring):", extractedBySubstring);
+console.log("Extracted (slice):", extractedBySlice);
+
+// 4. Check if query contains: functions, arrow, iife
+console.log("Contains 'functions':", lowerCaseQuery.includes("functions"));
+console.log("Contains 'arrow':", lowerCaseQuery.includes("arrow"));
+console.log("Contains 'iife':", lowerCaseQuery.includes("iife"));
+
+// 5. Print character at index 6 and ASCII value of first character
+console.log("Character at index 6:", cleanedQuery.charAt(6));
+console.log("ASCII of first character:", cleanedQuery.charCodeAt(0));
+
+// 6. Case-insensitive check for 'javascript'
+let hasJavaScript =
+  lowerCaseQuery.includes("javascript");
+console.log("Case-insensitive 'javascript' check:", hasJavaScript);
+
+
+
