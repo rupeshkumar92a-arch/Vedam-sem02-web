@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;  
+    height: 100vh;
+    margin: 0;
+background:linear-gradient(to right,rgb(55, 75, 164),rgb(238, 87, 225),rgb(32, 48, 186))
+}
+
+.bond {
+    height: 500px;
+    width: 450px;
+    background-color: rgb(163, 111, 163); 
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* REQUIRED: Keeps the box inside the container */
+    overflow: hidden;    /* Prevents box from going outside edges */
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* REQUIRED: Let us move it with top/left */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers it initially */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Makes the movement look smooth */
+    
+}
