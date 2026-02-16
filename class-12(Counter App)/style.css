@@ -1,0 +1,38 @@
+\*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+  background-image: linear-gradient(to right, rgb(191, 168, 229), rgb(69, 84, 213), rgb(151, 89, 133));
+}
+
+
+.box{
+    height: 300px;
+    width: 250px;
+    background-color: rgb(205, 138, 200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.boxmain {
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+.center{
+    margin-left:50px;
+}
+.buttom{
+    margin-left:30px;
+   
+}
+.center h1{
+    text-size-adjust:50px;
+}
